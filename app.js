@@ -2,22 +2,17 @@
  * Created by deepak on 27/05/15.
  */
 
-var express = require('express');
-var _ = require('underscore');
-var bodyParser = require('body-parser');
-
-var app = express();
-
+var express = require('express'),
+    _ = require('underscore'),
+    bodyParser = require('body-parser'),
+    app = express();
 
 app.use(bodyParser.json());
-
 
 var users = [
     { name : 'deepak'},
     { name : 'chetan'}
 ];
-
-
 
 
 app.get('/users', function(req, res) {
